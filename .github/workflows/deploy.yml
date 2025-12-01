@@ -1,0 +1,46 @@
+# Простой рабочий процесс для развертывания статического контента на GitHub Pages
+name: Deploy Static Content to Pages
+
+on:
+  # Запускается при пушах в ветку main
+  push:
+    branches: ["main"]
+
+  # Позволяет запускать этот рабочий процесс вручную из вкладки Actions
+  workflow_dispatch:
+
+# Устанавливает разрешения GITHUB_TOKEN для разрешения развертывания
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Запускает одну работу, называемую "deploy"
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # Или другая версия, которую вы используете
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build # Эта команда создаст вашу папку dist
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Папка 'dist' будет загружена
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
