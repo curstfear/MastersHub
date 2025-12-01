@@ -15,4 +15,10 @@
     /* Состояние при наведении */
     @apply after:w-full;
   }
+
+  .hide-scrollbar {
+    /* Скрывает скроллбар, но сохраняет функциональность прокрутки */
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 }
