@@ -4,9 +4,76 @@
     <meta charset="UTF-8" />
     <link href="/src/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mastershub</title>
+    <title>Masters Hub</title>
   </head>
   <body>
-    <h1 class="text-5xl">Hello World!</h1>
+    <section class="bg-[url('images/bg-gradient.jpg')] w-full h-screen bg-no-repeat bg-cover bg-center">
+      <nav class="flex items-center justify-between px-[102px] py-[25px] mb-[45px]">
+        <img src="src/images/Logo.svg" alt="">
+        <ul class="flex font-light">
+          <li>
+            <a href="#" class="
+              nav-link
+            ">
+              Create Resume
+            </a>
+          </li>
+          <li class="ml-[40px] nav-link">
+            <a href="#">Skillset</a>
+          </li>
+          <li class="ml-[40px] nav-link">
+            <a href="#">Partnered Job Board</a>
+          </li>
+          <li class="ml-[40px] nav-link">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div class="border border-white rounded-full p-[5px]">
+          <a href="#" class="flex items-center justify-center">
+            <p class="text-white px-[16px]">Register Now</p>
+            <img src="src/images/icons/arrow-up-right.png" alt="register button">
+          </a>
+        </div>
+      </nav>
+
+      <div class="m-auto w-full max-w-fit">
+        <div class="flex flex-col items-center justify-center max-w-[845px] text-center">
+          <div class="flex justify-center items-center bg-white py-[8px] px-[24px] rounded-full mb-[16px]">
+          <img src="src/images/icons/job-link.png" alt="job-link">
+          <p class="text-[#002B6B] font-light ml-[8px] text-[16px]">Your #1 Platform for Skill Sharing</p>
+          </div>
+
+          <h1 class="text-[72px]/20 text-[#002B6B] mb-[16px]">Showcase Your Mastery. Get Connected</h1>
+
+          <p class="text-[#414D60] text-[16px] font-light mb-9" >Create your profile, showcase your skills, and let </br> employers find you.</p>
+
+            <form action="#" class="mb-14">
+              <div class="flex">
+                <div class="flex">
+                  <div  class="bg-white border-[#EDEDED] border rounded-l-full flex items-center justify-center px-6">
+                    <img src="src/images/icons/search.png" alt="">
+                    <input type="text" placeholder="e.g. UX Designer" class="outline-0 text-center"/>
+                  </div>
+                  <div  class="bg-white border-[#EDEDED] border rounded-r-full flex items-center justify-center px-6">
+                    <img src="src/images/icons/geo.png" alt="">
+                    <input type="text" placeholder="e.g. Liverpool, USA" class="outline-0 text-center"/>
+                  </div>
+                </div>
+                <button type="submit" class="bg-[#0066FF] text-white rounded-full py-4 px-12 ml-2">Search</button>
+              </div>
+            </form>
+            <div class="flex justify-center items-center gap-6">
+              <img src="src/images/portrets/4.png" alt="">
+              <img src="src/images/portrets/1.png" alt="">
+              <img src="src/images/portrets/2.png" alt="">
+              <img src="src/images/portrets/3.png" alt="">
+              <img src="src/images/portrets/4.png" alt="">
+              <img src="src/images/portrets/1.png" alt="">
+            </div>
+        </div>
+      </div>
+
+    </section>
+
   </body>
 </html>
