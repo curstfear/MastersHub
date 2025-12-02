@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masters Hub</title>
+    <link rel="stylesheet" crossorigin href="/MastersHub/assets/index-SpcvzhDR.css">
+  </head>
+  <body>
+
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-500 opacity-100">
+      <div class="animate-spin rounded-full h-12 w-12 border-4 border-t-4 border-blue-500 border-t-transparent"></div>
+    </div>
+
+    <header class="bg-[url('images/bg-gradient.jpg')] w-full h-screen bg-no-repeat bg-cover bg-center">
+      <nav class="flex items-center justify-between px-[102px] py-[25px] mb-[45px]">
+        <a href="#">
+          <img src="data:image/svg+xml,%3csvg%20width='187'%20height='53'%20viewBox='0%200%20187%2053'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13.915%2034.954V23.293L11.086%2035H8.073L5.06%2023.224V35H1.15V26.996L5.037%2023.086L5.014%2023.063H1.15V18.9H6.555L9.545%2029.503L12.351%2018.9H17.825V34.954H13.915ZM24.0395%2028.491V35H20.1295V32.424L24.0395%2028.491H20.1295V18.9H24.0395V25.041H28.7775V18.9H32.6875V35H28.7775V28.491H24.0395ZM34.9986%2035V31.228H38.4716V35H34.9986ZM54.7091%2035L49.4881%2022.373V35H47.1651V18.486H50.2701L55.8131%2031.895L61.3331%2018.486H64.4611V35H62.1151V22.35L56.8711%2035H54.7091ZM75.2303%2035V33.114C74.4713%2034.471%2073.1143%2035.23%2071.3203%2035.23C68.7903%2035.23%2067.1343%2033.781%2067.1343%2031.55C67.1343%2029.158%2069.0433%2027.916%2072.6773%2027.916C73.3903%2027.916%2073.9653%2027.939%2074.9543%2028.054V27.157C74.9543%2025.409%2074.0113%2024.42%2072.4013%2024.42C70.6993%2024.42%2069.6643%2025.432%2069.5953%2027.134H67.4793C67.5943%2024.397%2069.5493%2022.58%2072.4013%2022.58C75.4143%2022.58%2077.1623%2024.282%2077.1623%2027.18V35H75.2303ZM69.3423%2031.481C69.3423%2032.746%2070.2853%2033.574%2071.7803%2033.574C73.7353%2033.574%2074.9543%2032.355%2074.9543%2030.492V29.503C74.0573%2029.388%2073.4133%2029.365%2072.8153%2029.365C70.4923%2029.365%2069.3423%2030.055%2069.3423%2031.481ZM89.9282%2031.366C89.9282%2033.758%2088.0652%2035.23%2084.8222%2035.23C81.6022%2035.23%2079.6932%2033.643%2079.4632%2031.021H81.6942C81.7862%2032.539%2083.0052%2033.482%2084.8682%2033.482C86.5012%2033.482%2087.5822%2032.907%2087.5822%2031.757C87.5822%2030.745%2086.9612%2030.308%2085.4432%2030.009L83.4652%2029.641C81.2112%2029.204%2079.9462%2028.054%2079.9462%2026.214C79.9462%2024.075%2081.8092%2022.58%2084.6382%2022.58C87.5592%2022.58%2089.5372%2024.144%2089.7442%2026.651H87.5132C87.3752%2025.179%2086.2942%2024.328%2084.6612%2024.328C83.1892%2024.328%2082.2002%2024.949%2082.2002%2026.007C82.2002%2026.996%2082.8212%2027.456%2084.2932%2027.732L86.3632%2028.123C88.7782%2028.56%2089.9282%2029.618%2089.9282%2031.366ZM99.1843%2032.746V34.793C98.4713%2035.115%2097.8503%2035.23%2097.1143%2035.23C94.8603%2035.23%2093.2963%2034.011%2093.2963%2031.32V24.788H90.6053V22.81H93.2963V19.199H95.6193V22.81H99.2993V24.788H95.6193V30.791C95.6193%2032.47%2096.4243%2033.068%2097.6663%2033.068C98.2183%2033.068%2098.7013%2032.976%2099.1843%2032.746ZM106.193%2035.23C102.674%2035.23%20100.305%2032.677%20100.305%2028.836C100.305%2025.225%20102.766%2022.58%20106.124%2022.58C109.758%2022.58%20112.173%2025.524%20111.759%2029.48H102.674C102.858%2031.964%20104.1%2033.413%20106.147%2033.413C107.872%2033.413%20109.068%2032.47%20109.459%2030.883H111.759C111.161%2033.597%20109.068%2035.23%20106.193%2035.23ZM106.078%2024.328C104.215%2024.328%20102.95%2025.662%20102.697%2027.939H109.298C109.183%2025.685%20107.964%2024.328%20106.078%2024.328ZM116.552%2028.767V35H114.229V22.81H116.391V25.386C117.242%2023.707%20119.082%2022.649%20121.083%2022.649V25.064C118.461%2024.926%20116.552%2026.076%20116.552%2028.767ZM132.582%2031.366C132.582%2033.758%20130.719%2035.23%20127.476%2035.23C124.256%2035.23%20122.347%2033.643%20122.117%2031.021H124.348C124.44%2032.539%20125.659%2033.482%20127.522%2033.482C129.155%2033.482%20130.236%2032.907%20130.236%2031.757C130.236%2030.745%20129.615%2030.308%20128.097%2030.009L126.119%2029.641C123.865%2029.204%20122.6%2028.054%20122.6%2026.214C122.6%2024.075%20124.463%2022.58%20127.292%2022.58C130.213%2022.58%20132.191%2024.144%20132.398%2026.651H130.167C130.029%2025.179%20128.948%2024.328%20127.315%2024.328C125.843%2024.328%20124.854%2024.949%20124.854%2026.007C124.854%2026.996%20125.475%2027.456%20126.947%2027.732L129.017%2028.123C131.432%2028.56%20132.582%2029.618%20132.582%2031.366ZM142.638%2035H140.108V18.486H142.638V25.386H151.01V18.486H153.54V35H151.01V27.594H142.638V35ZM164.563%2029.986V22.81H166.886V35H164.724V33.068C164.08%2034.333%20162.654%2035.23%20160.998%2035.23C158.537%2035.23%20156.835%2033.781%20156.835%2030.653V22.81H159.158V30.193C159.158%2032.309%20160.216%2033.183%20161.734%2033.183C163.298%2033.183%20164.563%2031.895%20164.563%2029.986ZM181.75%2028.905C181.75%2032.562%20179.634%2035.23%20176.345%2035.23C174.62%2035.23%20173.148%2034.356%20172.274%2032.815V35H170.112V18.486H172.435V24.903C173.286%2023.408%20174.689%2022.58%20176.345%2022.58C179.611%2022.58%20181.75%2025.202%20181.75%2028.905ZM179.335%2028.905C179.335%2026.145%20177.886%2024.627%20175.885%2024.627C173.953%2024.627%20172.435%2026.122%20172.435%2028.859C172.435%2031.55%20173.907%2033.16%20175.885%2033.16C177.886%2033.16%20179.335%2031.619%20179.335%2028.905Z'%20fill='white'/%3e%3c/svg%3e" alt="">
+        </a>
+        <ul class="flex font-light">
+          <li>
+            <a href="#" class="
+              nav-link
+            ">
+              Create Resume
+            </a>
+          </li>
+          <li class="ml-[40px] nav-link">
+            <a href="#">Skillset</a>
+          </li>
+          <li class="ml-[40px] nav-link">
+            <a href="#">Partnered Job Board</a>
+          </li>
+          <li class="ml-[40px] nav-link">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div class="border border-white rounded-full p-[5px]">
+          <a href="#" class="flex items-center justify-center">
+            <p class="text-white px-[16px]">Register Now</p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHySURBVHgBzZldTsJAFIVPjQvAuIFhBbADyxLcAT75KIkLQN414KNPsBNwBeAKiu8a2MH1nrZjqik/nU5/vuQwkJT25Nx2eqcN4IiIhDr0VTfp2ElF9qptqg/VKgiCFapGTXVUY9VOihOp5ioD36TGpuKPuTejuqMHcUvsFJFqiDKI39QOMUVRJCnpUupjzWMWMbiW+lnmebnIMcfI+6ifUE6VWzcYSvOMsp6CjDmjA2M2aBZO8l2d2Dn+KfEYzZsjvFjG9kecYJpehHZxxRRtgmO0j/hctAkyPYN2sdcEry4l6UoMHAjuz99W3lAU3ixCljhEe+lf6kcPjhxKZfsNDF6SsSRxggYeyZoz1yhLz6vB/+aWjyhLhwbP7yKOkGfOQ4KdC3igInMxNLhHCao0p+xLGazYXHwIGtzAgRrMkU8afIcDd4vKzZFNvAAXB6Iv/eNzMlZIaJuFHTxNNx7ZarPQtdPMK9rHih82Qaa3Q7tg2x9fxUj7/zaluKA5fskumpgiG9emz8WtamAN/t7q0hQnaJ6JNZeLJjmT5pjhHKTe5zKWdZ6XQ93MLRxvgY6sVAMUReop93llPWKSz2si8Q8fio7gA92RUS3EH6yM/+ksYzSS4jCxp6LGAjgiyYKf4rLVpMq+hqB4obGd27i+hvgBUBJLy1V/I5cAAAAASUVORK5CYII=" alt="register button">
+          </a>
+        </div>
+      </nav>
+
+      <div class="m-auto w-full max-w-fit">
+        <div class="flex flex-col items-center justify-center max-w-[845px] text-center">
+          <div class="flex justify-center items-center bg-white py-[8px] px-[24px] rounded-full mb-[16px]">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJESURBVHgBtVZBbtNAFH3jOF0hYU6AsytKUMwNzAmIT4DZIdJFcwK4AVlAxQ44QdsTNDeoK1HUHeYEeIEq1Z50+v93HNuq5aSR+6QZj+dP5v153/9PgEeG2rjCO3SQpS6U5dTmf31ZYAu0E3gfPGh1BgOnwRoDJsDlUdS2hd1mRKaOqU9gqXdEklTccnBrPtOA7QPshJcHEwynRp5NGB34YudnC+oSid5ZSKMxv63aouX3PkQqWXOBfv8E0TxuJhhO39LbfKV3DKVYkgRbwXiVOIW4/PqzTuC9d6F757QoxrIf4KruxVbYpz16PY6JSycZ0EnEOUuMmeWLB7tuzrj6Rs4tAxoVMqMkgPLBcuy6eZUkj8m4TqDwnLoIXYBjZ8yzOkGnMAll/dNHJKjDRtcwOOWuG4Ih1ar+XiLJxUmqtUdFcF5dsptEL6h8jKb/KKLnSNN8Q62/U3DPKGH/VMvLwwk4KS1zLElpqQDXe+GKYCbvjFuy8+nWBAZ/qXO3Ish6H8E5w0nZsxd4QrJwwbNtymQ7oix+JXZjhSVBXncc0XETFJUCzhlOykKWorFcXCIUImrjkgA4EYKbm3AjAdSFFLc8qDNy7vW6sVwsoeEqbOLcnwKjKd9cPo1+gEuvashs247p+nQkuJAYzESW4itaap/0Zwk9knDApyw/U5s01foTHfUNuOQac9/5ND3F76MJfSWB3GgczCXNAZOVXBNymeKj1kWz+U7eP3Rha/fe/H/yNp6XdwQHt5iTck1/DDbc0Z3jDvHo7ijC0MHUAAAAAElFTkSuQmCC" alt="job-link">
+          <p class="text-[#002B6B] font-light ml-[8px] text-[16px]">Your #1 Platform for Skill Sharing</p>
+          </div>
+
+          <h1 class="text-[72px]/20 text-[#002B6B] mb-[16px]">Showcase Your Mastery. Get Connected</h1>
+
+          <p class="text-[#414D60] text-[16px] font-light mb-9" >Create your profile, showcase your skills, and let </br> employers find you.</p>
+
+            <form action="#" class="mb-14">
+              <div class="flex">
+                <div class="flex">
+                  <div  class="bg-white border-[#EDEDED] border rounded-l-full flex items-center justify-center px-6">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGUSURBVHgB3ZRPTsJAFMa/oemeI4w7E0ysJ5CeAI7g0qgJ9QTACYREjEu9gZ5AbmAXkrCzR2Bf2vHNH6jETmeiuNAvGXjQee/XefPeA/66mPXJ0VUXgvWAsk+/uPk3VSsMx0gnGb4FiJI28nxIVuLwnRjQqmlTqyb4iwrOsAJjY1oxFjOmFsQJPXs0uxO1V/p4n6BzeQP95hmKMMbSkobDc44gkC/C1UkWs2s4ARE55cG7sovwwBp8F/JKVlud8u12XretSlEeDI314AwutbzPKPBU2SX6tm0VgLFIG2IKf821r+i5AUJowOIuha+qtHA34Jf0GZCpT9lgvupcmLQidQMYe1bfJbrwFhv4A4An7SMG1DwcLsmyBs6UXVBHOwHywnTZtU2HcjQFz1WjSTWW9W4nV6Mi2jrLst1UlryfsjxFiyUQ2IyIjGZSbBt+9cNuvR5R2Q7QJEGn1fXPmyD2ca1HwYjSdrztERlIUDG06L5kSndnUi3EDvCVA/JzgAOyn06Wg68oYuhm5aZQsD/AV8g/0gc4yp2AAcSE2QAAAABJRU5ErkJggg==" alt="">
+                    <input type="text" placeholder="e.g. UX Designer" class="outline-0 text-center"/>
+                  </div>
+                  <div  class="bg-white border-[#EDEDED] border rounded-r-full flex items-center justify-center px-6">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIxSURBVHgBjZS7bhNBFIb/s5u1KJcCaqeLsJHWRXq7o8MlnZMOxZFYniDOEziIgOhingCnpAqpg5SVUMBdXCIFCTeWkHY3w5kzs7dgbzjS2DM7M9/85zJDWGXt/S6UGnCvy61pv0bSHDrFt+Pp3S1UGQUvm4jdEwuoszk8r4foaJ59cArIXoDEvRQIYQGiQ6TeJq7ekTSoDrddgWiVcXyJFu+pKNJKNETB59FHLL0Q86PFSi1B6CNJRuz6Kx4tWFlHK9uQydg9418fit7g+3GIOovkgBCtoT50wMp0KHqEp/t93KpPInnJ9ExJFi9CIEqVmqLReJ3HRSuL42sRQNRzGPLcHKUOK5AsXsZdDgL1JS5B2MyVEXsgW9XA4UEWsCiXn2yMS/F6iDTdlL4+3bhi1yUT2+s6TDOgq/cFSKm+/KfeSFTOPuh0Z7HLMyXfjTWL9FfNuPgApcz98W3HX7VBg+bS27K+ayPrZhyPJSYSWPfAqj3N1xV1FGnQuUEmO/mCJN21qnYkM3H8W/q6UG8b5fIogYgmRgUXmD4Z1vc07fDc1CrUGfqChMtjVko/yKjU90+sPTzjAlPcTvC/1hqO7Z7rLEZVV57sHdwLacuaUJSmfHnZXJn49XWBx9ufWeoLduEZHm0DNxfnayGKRgJRqocfb2cFSNvNxc97YXchpdpzKwvrYDUQbbRSvtQHmRcBmHBG9cvQXwdZD/oXhjpIPUjbFr8Crmvu3dKbrH3s2P4COngBLst7hJUAAAAASUVORK5CYII=" alt="">
+                    <input type="text" placeholder="e.g. Liverpool, USA" class="outline-0 text-center"/>
+                  </div>
+                </div>
+                <button type="submit" class="bg-[#0066FF] cursor-pointer text-white rounded-full py-4 px-12 ml-2">Search</button>
+              </div>
+            </form>
+            
+        </div>
+      </div>
+      <div class="flex justify-center items-center gap-6 overflow-x-auto w-full hide-scrollbar">
+        <img src="/MastersHub/assets/3-BV7b3uzN.png" alt="">
+        <img src="/MastersHub/assets/4-Czrj12_W.png" alt="">
+        <img src="/MastersHub/assets/1-DRwCNC29.png" alt="">
+        <img src="/MastersHub/assets/2-mBM4KHV_.png" alt="">
+        <img src="/MastersHub/assets/3-BV7b3uzN.png" alt="">
+        <img src="/MastersHub/assets/4-Czrj12_W.png" alt="">
+        <img src="/MastersHub/assets/1-DRwCNC29.png" alt="">
+        <img src="/MastersHub/assets/2-mBM4KHV_.png" alt="">
+        <img src="/MastersHub/assets/3-BV7b3uzN.png" alt="">
+      </div>
+    </header>
+
+    <section class="py-20 md:py-24">
+    <div class="flex flex-col items-center justify-center px-4">
+      <div class="js-reveal transition-all duration-500 max-w-xl text-center mb-10"
+      data-delay="0"
+      data-animation="fade-up">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-neutral-900 leading-tight"> 
+            Why Choose <br/>Masters in Me?
+        </h1>
+        <p class="text-neutral-600 max-w-lg mx-auto">
+            Unlock your true potential and discover a world of opportunities that align with your skills, interests, and aspirations
+        </p>
+      </div>
+
+      <div class="relative w-full max-w-xl aspect-square mx-auto">
+        
+        <div class="absolute inset-0 bg-[url('images/choose-bg.png')] bg-no-repeat bg-cover bg-center rounded-full border-12px border-blue-50/50"></div>
+            <div class="js-reveal transition-all duration-500 absolute top-2/9 -left-60 z-20"
+            data-delay="0"
+            data-animation="fade-down">
+                <div class="py-6 px-7 max-w-[260px] bg-white rounded-3xl shadow-2xl/15 flex flex-col items-center justify-center">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAN9SURBVHgB7VlNTttAFP7GSVB3pSeou6NNEOYEhBM0nABnh5JITU5AOAEsgHZHeoKaE5CeoCCCyg5zgsICqUocT994nJBS/4YwhMqf5GTiGdvz+c28970XIEOGDBmeEyzxSKO5iGG/Aje3AriLmAm0G7rXNQoFC6d7NqZAPAEx8cFgl1omnhZdIlJNSySagFEzMGDfqKXL0awLzo+h8RvMAi4TljToWBs/w3Vb+Pl5L+ktwgkYWzoGuRPvxmLiTr6Ky+nMHIslelY+36SX88k/Y+Li4GuSS8MJFOtX8CbPLfQON6ACpUabSGxT64aW0ztaTrGW1gLPLjcqkCa14Sy0oAq9/Ta90i61FtF3mkkuCSbg8o+ywXeebNmEgu3Ir/FyikQwAcYMv3UK1ejtdyEsL6wgPGAM8oFnOZcELg7VExAYDtdpU+tJ9kAe84jLLzakFWKh4YXjxRNQv4SKNZO8xCa5SwMc4ZuUUSzgsCge7ETJC7UWKNaPaGZ0oBw5eQHZb5IOu6LrNsOGqbNAqbZNkzLlm+Ut3C1YsCO8zN/yokOWOwvyiuoIcOZHVrZBOqcbO156oibJC3gkONr0u/JwmJolVGqUIQITSBTKQJUcjiOVKWNrQd1qCDBX9765e4u0kJYQCNwzajcxY78wY/y3gcz2PpeaOuYcYQS+y17HxJwjTE535De5rwSS9jkRTEC4unFm1D/CHCN8EzvDKsReYKxCofwHWULHHCI8Egv/u7S1jpxXmTA8TfKhZkHTzsiv24gEFazO9y0oQLSUuCfRpl+bnjU4pyOuHsaF6lxVkdHFayEZCU0i0kZOIxWpGbS5X4/7GRWnBCmJjn/uGr0DJelocjEniXT+OS91jiBwSiKtimnwnso4GlVCCoVWkjx4Eo+PxMzXKJxfY1rkIPS+iaFTRko8Xk5zyAqGpsUvGc7fBJ53nBYK2jHOD1Jv/FnkAyveJ4uoIbl+X4gkDl2eAmKJci5agfdPT0BE5t+T0tbRx81J7fSKMq/RehbeqFSnyjalksX6Lu2VZOVKWdqXgZSz46Ahyf/gGN3QoXgQl8+Owas0+Y7XlG/yxO/o0hFdph/iLVnMxKhGe1dYDUpBp1hCzKaJJSPgavcPFPJkubFBdVfxZ0nZO9yI9zfqGpX2Q/LndBaYBUSyHhRPHoKzW/KRVuoUNEOGDBmU4g+tlDLdErh8bwAAAABJRU5ErkJggg==" alt="" class="mb-4">
+                  <h3 class="text-neutral-900 text-2xl font-semibold">Showcase Work</h3>
+                  <p class="text-sm text-neutral-600 text-center font-light mb-4">Showcase your project to stand out among all</p>
+                  <a href="#" class="bg-blue-500 font-light text-white rounded-full py-2 px-6">Add Work</a>
+                </div>
+            </div>
+
+            <div class="js-reveal transition-all duration-500 absolute top-1/12 -right-60 z-20"
+            data-delay="200"
+            data-animation="fade-up">
+                <div class="px-6 py-6 max-w-[260px] max-h-[92px] bg-white rounded-3xl shadow-2xl/15 flex items-center gap-3">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUCSURBVHgB7Vm/b9tGFP6Okgx189AfQxdmMyoBUYEGDdAh6tYt6V9geSukAFG2bpa3brGL1O0W+S+IsrlT6C1IC5QF4tToYnYL0g4q0BZGKPH63h1pihQlUqIkJ4E/QOLxyOPdu/fufffeAZe4RC4IzIONtomCe4tKV+lXo986fWkdkn7jcOjXh5QOhDhCqdSDvetgQZhNgOrtOg1km0p15IMFyAMc73eRE9kEqH1lwi08QDBwwTOKHgx5BA82hmt9nFGds9uPtDPb6yiTVooDE9IzqSG3v8FP/Dcc0sjneTSSLkC1eYde6yjz4IFD7OGf4u7YYGdBpdmg77AmTXXveXfx2/e7mAOFqU+rzW1I8Q2VynTdw7+lL/H7t4foPzlDHvz5k40PPzsgc3yH7q7T2vgC713j+iPMiMkC8MzrwZO5ih08v/917oGP4gV96+XTQ3zwKVtBnYSo491P/sZfPz+Z5TPJArDND41DVdaD72BZePnUGhHiOt6/9iNp4kXW5kZirVt4rK5sNsscfIBn1IegvtgdQ9ybpem4AGqBqcXl4L9iB6tCUfXlgDWhx5AJ4wII444uyJ1cnmZW2NwX9akHsZm1WVSASrNGnoGZ1VkEycyM0loPzNqsBSbNDIhpQASNLFwEWAtCHKiynshUFCN3QtyghiSWeJTastI6RciocZAGv7uCeSA8m5wHC1Cnu1Ryi68BU/17noOLgutZ6irE1SyvRzUgpamupTUnteW8M5yGcrkP1+XSepbX4xrQjewVep84wr7nEuCNw1sngFZfrZ1JfUtB2Hdoxrw3Y69XaY1tM5IFOMPFCeC+Mv2SE1aWeVxc345PbpwHbOWJSsM63XUxDdN5YBLS+cEwTHiSBxNqgBd2tWVRUFUnD9XACD9ENSClDig8L/NeZOHw5E11FYgGNxIBuUb4IaqBUqlLErKd1ZWqprnTZfFAEHdLrxetlpYfAddHa6Ma0APWexHX3caqMbqVP963I89Cco2sgXE3Ohx2/FJb7U5XCuFPWrCtHsEEghsX4OQHx4+OMGt0lAucQAhnv5u1WTKR6ehI78tXwQmV1ibtQDuqPKQ80QxIFkCrazWcwIMPXDYnEE4mJLmSCA6TBNAvm6pcxvI2dppZu6qclv1IJLiJWYlXt3RBWImuNK9ZcbioibCt7rOlbrRDkfKP0cpi8ruBN/AOop8gr+SKh+RieW9Cbk7yYrfHXF4cnM0uDWrwKOITXoMGEUwAO4wtHN+3kAZBgb4iaET4YTw3qvOWDxDQPs/2YMDBPttqA9PhxO7NxLeCHOuz1FnX0MnlU+hk8MejVpGgAbF+3nmlJf3oKIROdrWVoMK46Qff5nmbZPBMO5TJ/pWMtkcDtzALBsY9v+9HcZMe14Ce8Yd+UB2k0vuqsUdZ6ZMpqXA2lVGcLOAgY9Qi2MXGvjnfCc0qUb39i9ay3EoiuNc/IgvyQxPYOb8AOlI6JdMzsRw46n8j+fuL0gB5CfcUHzWXsYPVcYExaCQ9zL8GeNG7LkdIQRDkgFOTnCIsFu3UFE144smBDJ2lyS6e74e7UX2wyOn+PrnQK+leaF7oZOz2ufeKwpnQypxQb1N6cweFouWHk49VOAncJW6KpBsX74VUhttokHFS6EcLUKZsBjWpWVTa808yw8O/OAIOijRfBSYswESe2CDWLRh03GRsRiZAkJCD4tZCuOUSlwjxP0x+2zofGan5AAAAAElFTkSuQmCC" alt="" class="w-auto h-auto ">
+                  <h3 class="font-semibold text-xl">Networking Opportunities</h3>
+                </div>
+            </div>
+
+            <div class="js-reveal transition-all duration-500 absolute bottom-1/8 -left-60 z-20"
+            data-delay="0"
+            data-animation="fade-down">
+                <div class="px-6 py-7 max-w-[280px] bg-white rounded-3xl shadow-2xl/15 flex gap-3">
+                  <img src="data:image/png;base64,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" alt="">
+                  <div>
+                    <h3 class="font-bold">100K+</h3>
+                    <p class="text-sm text-gray-500">Worldwide Active Users</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="js-reveal transition-all duration-500 absolute bottom-2/8 -right-60 z-20"
+            data-delay="200"
+            data-animation="fade-up">
+                <div class="py-6 px-7 max-w-[260px] bg-white rounded-3xl shadow-2xl/15 flex flex-col items-center justify-center">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKSSURBVHgB7Zm9btNQFMf/J046B7EgGMgY5CIlYoOlPAHtxka6oaZSwxNAnqCp1AIb7hvAE5BubBhBpG6EjTFj1CS+nOvrhFSNb+z6S5HuT4qv7Rz73mPnfAYwGAwbDSEp9kGLb/MJt0LsY/DeQQJKMBgMG008L/TocBclcYQsIeri12k/qngZcbCwA8GfLPHwg7f9qOLx48D24Q6yQngjjgsuDIb8iG4DjU4V02mD99iQxUNkAdEfXpGLn6efI18SSWr7gF0nvWMPVEU+DNmiu1ESvfUK2G2ZabaUNPV9N2d56XsKj6p8f/mAXvAbbgRnHQzO9nWX6RWw28e87bDUiEX34gSYRKgUXc4tFeqxEm/CRElzE34K9F0diGbu/lnN/xVSCaLnYQ9PUw+QShkEdQsJLnJOohO1BvEqTExX0Oz6W6/soCimUwfLa1nBagWky1S/vxEue0MUxeXHob8GuZZ6p7ZKZLUC4/HcXY5QPNo1ZFsT2+3f/idD4qXT8akhYza+K5HuG5DGP7v67zG8YHwsA1OAtdWHm55jSFeByaTH8eOmz/aWGl+zqy/QuMW4pKsAkcNBRyydaQWjszhTKp0jRdJVQIX7/uLYbrf8cU1ClgRjxGsYpdA+1pKtArNZE+VyDRmiSafbyhgrlTvs9opLKebrGJytXGu4DVBgjKoOLgZ7ET9C03ldPXDhD0IcB9lpAdBbNYqTMAkr7Avcf+rC817yXp3He3jw7AJ/v42RB/KB3X3yAfDbmEMubkLdsN5H1F/XYFmyrKth3imobKWaClyfj3N+ayKj9JE/p6zFp5WmriZZ7+SuK5EnLmaVvXUFVXQvLQ2KSpzncMsjq/6Q6n643OQ9T/rnn8Fg2BD+AbShurvf+K93AAAAAElFTkSuQmCC" alt="" class="mb-4">
+                  <h3 class="text-neutral-900 text-2xl font-semibold">Resume Builder</h3>
+                  <p class="text-sm text-neutral-600 text-center font-light mb-4">Create a professional resume using our built-in resume builder.</p>
+                  <a href="#" class="bg-blue-500 font-light text-white rounded-full py-2 px-6">Build Resume</a>
+                </div>
+            </div>
+
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+            
+            <a href="#" class="block w-5/6 md:w-3/4 max-w-xs relative">
+                <img src="/MastersHub/assets/choose-woman-DBcx4Eh5.png" alt="Video Resume" 
+                     class="rounded-3xl shadow-xl w-full h-auto">
+                
+                <p class="absolute bottom-4 left-1/2 transform -translate-x-1/2 
+                          text-lg md:text-xl text-white font-medium 
+                          bg-black/30 px-3 py-1 rounded-full">
+                    Video Resume
+                </p>
+            </a>
+            
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="bg-[#FAFAFA] pt-[88px] pb-6">
+      <div class="js-reveal transition-all duration-700 flex flex-col max-w-[830px] mx-auto text-center"
+      data-delay="0"
+      data-animation="fade-up">
+        <div class="max-w-[660px] mx-auto">
+          <h1 class="text-neutral-900 text-6xl mb-4">We are happy to work with incredible clients</h1>
+          <p class="text-neutral-600 font-light mb-10">Fortune 500 companies and renowned global brands place their trust in our products, solutions, and bespoke software development services.</p>
+        </div>
+        <img src="/MastersHub/assets/clients-bg-BkJYmNK5.png" alt="">
+      </div>
+    </section>
+
+    <section class="mb-[88px]">
+      <div class="flex items-center justify-center gap-20 py-[88px]">
+        <div class="duration-700  flex flex-col w-[580px] items-start gap-y-8">
+          <h1 class="text-6xl mb-12 font-semibold">
+            How It Works
+          </h1>
+          <div class="js-reveal transition-all duration-700 flex justify-center items-center gap-6 max-h-[105px]"
+          data-animation="fade-right"
+          data-delay="0">
+            <span class="font-bold text-[108px] text-[#002B6B]/20">01</span>
+            <div class="flex bg-white p-6 shadow-2xl shadow-[#002B6B]/25 rounded-3xl items-center justify-center gap-4">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASQSURBVHgB5ZvPbxtVEMe/82zRKJTiHKAN6g8vt/ZShwvKCScHULm0lYoqcaEq4pxE3CHhHyA9wAU1lBNCVNBeOHCg5kJ6ou6lVy+kkkU4xEWoFFG/YWa3TuLazm7s5xdv+pHWXm02q/1m5s17b2ZCGAJrf3LZwpbI4jSDSnKpIEfxqdtCIoRgNNjwzwameuwlqsAxBAfUalzIjaMM4jkGSvLSBfQDoUGMCsjePP5y/hocMJBAFZY/iDnLPN+3qN6IhbnSbJqlYJJC9ElfAocsrANjaPHxY3zVj9BdC6z9wecM+FN0jqlhIxa1S7t13dQCo3H2PD5mtdoeQoaWm39jKQioker+NDfV6lw0hr+HBpDRILSWZtK4bKLAJ+Juwb9LJpFK5I4CR1hci0SRPQVmQFyLHUV2FagBxYzzHYy+uBZV+1BEdgk8ptvdGi2RHXFKKXcweucOOixYW+dLhvlLZBALOh8cphvbr7UJzNC460Uorjq13VXbXDRv8B6yK04pmnHbthDZtOAT69WQfRpixaBlxU0Lmlz3QZpBCtutuOWizGXsG2hOpzo9iwRq5MSQxt5tcfpPfiCsrMInhdwLsgEX8vqRY5xluOOvR8DVVRH1S3x+aAxYmIFfLM/J541IIJO4pyOF9+rAxRWKhE0XgflZxqnJWKRPmOOdD63VJUEUz30Dc1/i1pnPCEcngC/eZRwd+l5/Z6yhGWPJOtvj/XgvdslREKeYpi0ZIvMGHHG7RpE7joI4hQxOG0n1OXudB/8CLx7Y+R4do77QnKysq6kID6jrfvgd4czn5E+kZPwkinIRQ0bFaWRVYQszcVT1RDEPD+hEr+J0qlgNCasrve996yTj8jSc4UXgoTGdZON1PSXNty5XHPAkcH5WLRcHmNdfjd3UF7IW7T/vnxZ1zW8uM96fZiz/5DWShhpkUmWIB0VFfvQ2cGHKX5DR8pxYkO/CEccKjLWEP5fHCAq2eCB1FFThiFNH4vXofS8+kQauGMvGmcALr8WuePEqjYRImzPVKHb/tm43XNX5NIB88LUI3ADePKkH450p7AWNE4fNRCTw93V7S/ZPZThCrXf9V+Dbaiw02vDOup3AE2HcPHHEnIvmwSbTFRmMZThCdxM69+lmV1MW1+/A+QSeBLGNEsCRBWsbUov4T1KGHsrRngjFPQM9iZJOwYTkEJt8BfsEbV7YPG+d7CcrSjktaJXTNvOi+8WKFtzWdtJWm7BjZlm+QmSXUDJN17ZfaBOoVpQS1AIyClnb0TTUUQCN6mucPVe18s7HJzt7aLpWeO0BsyhfzpZwHgjxT/TOHXQVGLmqpfPIxniMmxB6NAY9u20kLbLeCGSQgD5AH4TRctdq2lauRIFKJPI5mhqF6KrRMuqJSdlauft2yjpfEpfdiz6a0DZpIXilvU0kif4aYuuaDbcilIZf1yc0rC4hH5nltC2U7b8+AJFQYxelgqMVqiJcMqCwrcc4Ql03Z/gsE8oDNaVLANENOB6iMoiwrUcOARFbNlJYJRLLEgqSDimiy78VyCGCuCo/v6vJLwkcFTjmfysN8xEaRYohAAAAAElFTkSuQmCC" alt="" class="w-14 h-14">
+              <div class="flex flex-col">
+                <p class="text-neutral-900 text-xl">Sign Up and create Account</p>
+                <p class="text-neutral-600 font-light text-sm">Fill out your details and showcase your skills.</p>
+              </div>
+            </div>
+          </div>
+          <div class="js-reveal transition-all duration-700 flex flex-row-reverse justify-center items-center gap-6 max-h-[105px]"
+          data-animation="fade-left"
+          data-delay="200">
+            <span class="font-bold text-[108px] text-[#002B6B]/20">02</span>
+            <div class="flex bg-white p-6 shadow-2xl shadow-[#002B6B]/25 rounded-3xl items-center justify-center gap-4">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASFSURBVHgB3Zu/bxRHFMe/b2KncYzuUFLEbs6Fo6SIf0ip0vgcKXVCkVSRAn+BoaG13UIBVFQII0EDBVAjYVODxBnE74Jt7IYfd/xqOHuH93Z2fb99ezczx60/0tp7c7ur+e578+bHmyN4QJcfFhGGcwDNgoj/6xwXF5ouC+KjAq3vQKkS5X/dgGMIDtDllyzgQxEaS/yRBSGH/qjwsYEQN+n7mTU4wEqgEfZxiS1wHP2L6kTAL2wDanSV8r8E6JO+BHoW1grRCjByqR+hPQvUrx/8DYUzaG1TvgnYdVd7dd3UAuN2tsxucxxfE42zUOPstlOVNJenEqjLTwrQO9f5bA7DQQAaXUzjsl0FGnHVdQzeJbuRSuS+AodYXEJXkR0FZkBcwr4iVbvCKKBkQ5wQxQcTBFtR7e/haJkNcTEc/MKozi20uCj3c0dZ9kVkEcIRys/caCyqI0PtrhPcHsfn6/vIJhfd+R/ZFScUEL5vGIjsWTC23ktknwpbcSqxYs2CYXUZB4NcvRVrAglF+Ob5FeDReXiHaCnpNkbkTxQ5fbc9EfY4Fjc6Dvz0HzySwy5PwIEbxoIKf8En27dr4oTNU8Cru/CKilYXTJDRbx+U4Wvi+mkLuPUv8O0httx3cSGZ8j+vAmOT8ESFDs/kVbRA5HNWXjptxC1cYIGHzPH7WfNfvvNHTrSNRKtf5GTtqT1zJ1nguGl3CWMTQPGCKfcJaxthcQvwiYjppdwlimYlirpzz+AmB497wOcPQJWPicXu0VK6DglCgoj+4TeO545intZzIrAAF9z6h5v1M9O2pKLikmk8n3TtfGvdvKQXlzkAXYM9lHMjUCol4qS9TffYv8n19feIuBJ3I1ts1ck/YElBwQXilmKxaQedtzxDvGB7HS5wI/DTNrfkn+GMsR9NO3aAG4GuEQtW3QkMcHAJOMhQRZaLB8LkIgYMC9ThpsnhDYBprzOINuh34qIlHFQ4/aYkswpbpItwFBScwtpUnDZOlanpiAyaZfrjChk02I9VK6It6SbsrCjjR7Hg88uwRsam1ffmmVZw3h/JhLfMSU2N67BBJrWVp8Zd++n0RZQMGORFyf0yGbaBcIwXgddigfc5F/GNLBnazSyS2YRUtFfkxYirS1cyYTsG1QEdnp2Ss9q66JvNFe4uDsbSIWGNrXdMTmtDNRXyOoJlsBkadleTsz2BlJ+XDTnnkHW05vz9fJB8bBxsR1bUATIL112Fa/UlDQIjKxKdQFYharCe0DJdivJrWXRVTeekW2gubj8fVOEK35GhMaq45s5Ku2/aCjSuGh7JRnvkOlK4GNW5DV22kdznnKHixREqYCjZExd0uiLFRqBhFdldnNB1TSZ6AD9ouNyV40MKcUKqRadY5PxQRFeOlmnFCb1vpyxzslTr5cG7rLgknWjeJtKNPjfEcrsM1dEBDc7NEJJHWZ0i5X5YbmmOhPIsBAseLGolLMFZYtC4bpQKL8JuUzoHEHBb392wEZbgJfNpssacWNVR7jH5SUGh6bKAr2QrUQlKb3K88/Kzgi/LkrabgdA4KwAAAABJRU5ErkJggg==" alt="" class="w-14 h-14">
+              <div class="flex flex-col">
+                <p class="text-neutral-900 text-xl">Upload Your Portfolio</p>
+                <p class="text-neutral-600 font-light text-sm">Add your resume, videos, and more.p>
+              </div>
+            </div>
+          </div>
+          <div class="js-reveal transition-all duration-700 flex justify-center items-center gap-6 max-h-[105px]"
+          data-animation="fade-left"
+          data-delay="400">
+            <span class="font-bold text-[108px] text-[#002B6B]/20">03</span>
+            <div class="flex bg-white p-6 shadow-2xl shadow-[#002B6B]/25 rounded-3xl items-center justify-center gap-4">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVFSURBVHgB5Zs7bBxFHMa/2Tvb3MWJHYEUBWHrjiIFjS8iDZVtaAkkJWkIDZRJBH3sHkRSQkOoKGMeDU1i09AE5VyEIgVebARCAsV27LvEjx3+38R72tvb861v5uJb85NOu97HaL/5P+ZphR5QX9FTuwEqOYUJrVGRS6NQKDU9pOHLNV/OVgONhZyHamFMzcMxCg7QS3q0lsOUFHZFAxVFQd2UI2Ll3fkA+HZ4XN2CA6wEUtiTPK6IBa52K2offBE87w1gtnBa+eiSrgT2WFgLSmEGeXzdjdADC9xc1heUxuctMdV7fHHd2YO6bmqBtFo9h+tyehWHy43CLmZVWa2meTiVwPqSLmkPt+XpCvoDXw1gOo3LdhS4J+7uIbhkJ1KJ3FdgH4sL6SiyrcAMiAvZV2SiQJNQPNzPgLhnaOkFBZhOSjxe0vMmW2ZFHJHkt5fhE27F2FjWl0X1V8gg0vO5eGxczUWvNQnMUNy1w5c28mzUVZtdNI/3MyyOlGpec0ekYUFjvRyWkH1WxYrl0IoNCwZtgjSDjEat2LBg7Xe9lHH3jNKwYp5/MXPKoQRHbD/W2N7QqP8ZpHp+4LhC4bRnjo4wA3A5zhmB4qfvwgH//rKDh18+McduGDmTw5kPX8CpqQHYwtkFOcyZKpMx3iPbgevK91tYnK2h8LKHV98bwsCwMudpoMXrfwX47ZunxuoT14sYOz8IS1aL4+qk4gSRTAzdhQX8uJ8uPcYJscC5T4917WoUeu+TTaw/3MWb352wdlmZCZj2dGA/xvvn3o75uMpM0eqj+C7LYFl//LAFW6jNE2edhCV/L2wbd2SisIVlFKWsNbGiLWLBCc/FpBFrnCQlF7ovEw+PUdbbCGAZeYnftBl4P2RSrOJJ/JVgCbMeP+jnjzbw62f1pntMPhTIYwj/ZszGRTJJsQxeZzzbIhYczbto3Jk1x94exJJkQX78cfm4MAvGj7zPH5uDqAhWAH9lKat8aQhFB+4ulFRtWWs45M47641sGicqjr8ozJ6Mu7cke7rESTVFaVdb+4nrJc4E1iSJPJD4YyyemmzuicTFJSUevsN3eT1MWi7wzCqPJRR25/y6iUHGWrQXwoQRt1xS4uE7jD9e/3F6zZTlAF9truj7Sts19sx8O1Lrr31cwIuv51vuM7ZGIgmFlqM4ioq3nWwmqpJNmWTe+GIYlsx7CLAIS9gwb8noIUkcGYmlfIqiNZM6BiyDfSEXIwtJn2ts6KuwhFmT8RNvzLuBZdQS4rgbuNboKc9e4CvSBrLGqzM1qwTBd1kGy3rpXB62UFvPhkuMoXxKN6P1OUDuxXApHPBWpd6nYAE/iDXPLPgg1l1LC+OvIuLaxfJBkPhb4DG04AU5uQ1H0NXYLu6kdFdanQNkh1MWFPZBQRZLTYmPZC1iUKYMn8dy9HPCF/cs88Tk6ZOcQ9S4iSMCs2fk/BlHyYqynFYOl9MaLe1RsaIkl6ZtJ01dia0AN1z0TQ8R3xvEreiFJoG0ola4howi4dWyaailM8j1tSCDrspvLiTsoUlseEzCkXVC1T/bRjrRsi4Ykjjgpat6AS5mJB7NJoR2G4P+v9tIQrK+EajjnEyhrHwVYLqv3FVGVWm3cqWadKLIpwHO9kN2NdkySCeOHLj7XpfFUuktHMY+Gl8mPq4NxbaJdKKr8QnjMvBwWZqRnq/rc5szu5BF6WWl3UIZxWoAtid0RgqZdG1RW2EhzkaYxnVlKZwzA5ab0jm7cLO4i3kbYSHuhtARzKoxF1Zl7ZFizQpWwr8VUJBM61Xl/qLq0b8V/AcYPogsEwjNxgAAAABJRU5ErkJggg==" alt="" class="w-14 h-14">
+              <div class="flex flex-col">
+                <p class="text-neutral-900 text-xl">Get Discovered</p>
+                <p class="text-neutral-600 font-light text-sm">Let employers find and contact you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="js-reveal transition-all duration-700 flex justify-center gap-6"
+        data-animation="fade-left" 
+        data-delay="0">
+          <div class="relative">
+            <img src="/MastersHub/assets/how-it-works-1-tVNq636g.png" alt="" class="mb-6">
+            <div class="js-reveal transition-all duration-400 flex bg-white absolute bottom-1/12 shadow-2xl shadow-[#002B6B]/25 rounded-3xl p-4 w-[280px] items-center gap-4"
+            data-animation="fade-right"
+            data-delay="800">
+              <div class="flex">
+                <img src="/MastersHub/assets/avatar-1-Bo5R6JrB.png" alt="">
+                <img src="/MastersHub/assets/avatar-2-D8u68-Hk.png" alt="" class="-ml-5">
+                <img src="/MastersHub/assets/avatar-3-KqKBQr-k.png" alt="" class="-ml-5">
+              </div>
+              <div class="flex flex-col">
+                <p class="text-primary font-bold text-xl">
+                  10K +
+                </p>
+                <p class="text-sm text-neutral-600">
+                  Job Seekers
+                </p>
+              </div>
+            </div>
+          </div>
+          <img src="/MastersHub/assets/how-it-works-2-R9Iqwpmh.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="js-reveal transition-all duration-500 flex flex-col max-w-[1240px] max-h-[400px] bg-[url('images/bg-gradient.jpg')] mx-auto items-center text-center w-full bg-position-[0px]  bg-no-repeat rounded-3xl p-[88px] shadow-2xl shadow-[#3B1FE7]/15 mb-[120px]"
+      data-delay="0"
+      data-animation="fade-up">
+        <div class="max-w-[600px]">
+      <h2 class="text-neutral-900 text-[40px] mb-4">
+          Join ambitious professionals and unlock your dream career today
+        </h2>
+        <p class="font-light text-neutral-600 mb-8">
+          Unlock your true potential and discover a world of opportunities that align with your skills, interests, and aspirations
+        </p>
+        </div>
+        
+
+        <form action="#" class="mb-14">
+              <div class="flex">
+                <div class="flex">
+                  <div  class="bg-white border-[#EDEDED] border rounded-3xl flex items-center justify-center px-6 shadow-lg">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFlSURBVHgB7ZUxTsMwFIZ/O8kME3O6IcqQhb03oDcgIxSk5gaEG6QSRWxNb8ANYGYqUit1w6wsZMjU0phnt4W2JEog7ZZPivLsRP//nu28ABU5sO/o+KqBJGmDsX2URvYxugtVxPW43nIh5SM4a5ABSl2ATUFPJ0yY8zrYGSQEht0atkH98oNWw6Poia89cDwbZXE8tcQCjO+p4aqBjen0ldx7/zJSwketa3ySBo2W0+bPG2xAm/NCgUtGLhmFsKwbDAKRKzyZtEnYoz1UOh06Oqe05NisIMKo62I2U/vQXxhlV7SaMWeeFo6tGoa3PiUapVSwYHwvtPjhuQ/D8H9VpBLZzDg2A4ggSivQRBZZRrpuFuUJ5xukGzX1XGyFecLFDdaNAvwRjh1TGRQ1UMdOOtgWUnXUOctT1KGrSR+T6iMCZWDUhySo4SXqo4ShJ9+fBQ5O3qgD2uX/B2xM9wtqOw+oKMIX4y6CNo+Wb4oAAAAASUVORK5CYII=" alt="">
+                    <input type="text" placeholder="Your mail address" class="outline-0 text-center"/>
+                  </div>
+                </div>
+                <button type="submit" class="bg-[#0066FF] cursor-pointer text-white rounded-full py-4 px-12 ml-2">Join Us</button>
+              </div>
+            </form>
+      </div>    
+    </section>
+
+    <footer>
+      <div class="js-reveal transition-all duration-700 bg-[url('images/bg-gradient-reverse.jpg')] w-full bg-center bg-cover bg-no-repeat px-[100px] py-12 mx-auto flex flex-col justify-between"
+      data-delay="0"
+      data-animation="fade-up">
+        <div class="flex items-start justify-between mb-24">
+          <div class="flex flex-col max-w-[415px]">
+            <img src="data:image/svg+xml,%3csvg%20width='215'%20height='55'%20viewBox='0%200%20215%2055'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.335%2036.946V23.257L13.014%2037H9.477L5.94%2023.176V37H1.35V27.604L5.913%2023.014L5.886%2022.987H1.35V18.1H7.695L11.205%2030.547L14.499%2018.1H20.925V36.946H16.335ZM28.2203%2029.359V37H23.6303V33.976L28.2203%2029.359H23.6303V18.1H28.2203V25.309H33.7823V18.1H38.3723V37H33.7823V29.359H28.2203ZM41.0854%2037V32.572H45.1624V37H41.0854ZM64.2237%2037L58.0947%2022.177V37H55.3677V17.614H59.0127L65.5197%2033.355L71.9997%2017.614H75.6717V37H72.9177V22.15L66.7617%2037H64.2237ZM88.3138%2037V34.786C87.4228%2036.379%2085.8298%2037.27%2083.7238%2037.27C80.7538%2037.27%2078.8098%2035.569%2078.8098%2032.95C78.8098%2030.142%2081.0508%2028.684%2085.3168%2028.684C86.1538%2028.684%2086.8288%2028.711%2087.9898%2028.846V27.793C87.9898%2025.741%2086.8828%2024.58%2084.9928%2024.58C82.9948%2024.58%2081.7798%2025.768%2081.6988%2027.766H79.2148C79.3498%2024.553%2081.6448%2022.42%2084.9928%2022.42C88.5298%2022.42%2090.5818%2024.418%2090.5818%2027.82V37H88.3138ZM81.4018%2032.869C81.4018%2034.354%2082.5088%2035.326%2084.2638%2035.326C86.5588%2035.326%2087.9898%2033.895%2087.9898%2031.708V30.547C86.9368%2030.412%2086.1808%2030.385%2085.4788%2030.385C82.7518%2030.385%2081.4018%2031.195%2081.4018%2032.869ZM105.568%2032.734C105.568%2035.542%20103.381%2037.27%2099.5739%2037.27C95.7939%2037.27%2093.5529%2035.407%2093.2829%2032.329H95.9019C96.0099%2034.111%2097.4409%2035.218%2099.6279%2035.218C101.545%2035.218%20102.814%2034.543%20102.814%2033.193C102.814%2032.005%20102.085%2031.492%20100.303%2031.141L97.9809%2030.709C95.3349%2030.196%2093.8499%2028.846%2093.8499%2026.686C93.8499%2024.175%2096.0369%2022.42%2099.3579%2022.42C102.787%2022.42%20105.109%2024.256%20105.352%2027.199H102.733C102.571%2025.471%20101.302%2024.472%2099.3849%2024.472C97.6569%2024.472%2096.4959%2025.201%2096.4959%2026.443C96.4959%2027.604%2097.2249%2028.144%2098.9529%2028.468L101.383%2028.927C104.218%2029.44%20105.568%2030.682%20105.568%2032.734ZM116.434%2034.354V36.757C115.597%2037.135%20114.868%2037.27%20114.004%2037.27C111.358%2037.27%20109.522%2035.839%20109.522%2032.68V25.012H106.363V22.69H109.522V18.451H112.249V22.69H116.569V25.012H112.249V32.059C112.249%2034.03%20113.194%2034.732%20114.652%2034.732C115.3%2034.732%20115.867%2034.624%20116.434%2034.354ZM124.662%2037.27C120.531%2037.27%20117.75%2034.273%20117.75%2029.764C117.75%2025.525%20120.639%2022.42%20124.581%2022.42C128.847%2022.42%20131.682%2025.876%20131.196%2030.52H120.531C120.747%2033.436%20122.205%2035.137%20124.608%2035.137C126.633%2035.137%20128.037%2034.03%20128.496%2032.167H131.196C130.494%2035.353%20128.037%2037.27%20124.662%2037.27ZM124.527%2024.472C122.34%2024.472%20120.855%2026.038%20120.558%2028.711H128.307C128.172%2026.065%20126.741%2024.472%20124.527%2024.472ZM136.822%2029.683V37H134.095V22.69H136.633V25.714C137.632%2023.743%20139.792%2022.501%20142.141%2022.501V25.336C139.063%2025.174%20136.822%2026.524%20136.822%2029.683ZM155.639%2032.734C155.639%2035.542%20153.452%2037.27%20149.645%2037.27C145.865%2037.27%20143.624%2035.407%20143.354%2032.329H145.973C146.081%2034.111%20147.512%2035.218%20149.699%2035.218C151.616%2035.218%20152.885%2034.543%20152.885%2033.193C152.885%2032.005%20152.156%2031.492%20150.374%2031.141L148.052%2030.709C145.406%2030.196%20143.921%2028.846%20143.921%2026.686C143.921%2024.175%20146.108%2022.42%20149.429%2022.42C152.858%2022.42%20155.18%2024.256%20155.423%2027.199H152.804C152.642%2025.471%20151.373%2024.472%20149.456%2024.472C147.728%2024.472%20146.567%2025.201%20146.567%2026.443C146.567%2027.604%20147.296%2028.144%20149.024%2028.468L151.454%2028.927C154.289%2029.44%20155.639%2030.682%20155.639%2032.734ZM167.445%2037H164.475V17.614H167.445V25.714H177.273V17.614H180.243V37H177.273V28.306H167.445V37ZM193.182%2031.114V22.69H195.909V37H193.371V34.732C192.615%2036.217%20190.941%2037.27%20188.997%2037.27C186.108%2037.27%20184.11%2035.569%20184.11%2031.897V22.69H186.837V31.357C186.837%2033.841%20188.079%2034.867%20189.861%2034.867C191.697%2034.867%20193.182%2033.355%20193.182%2031.114ZM213.359%2029.845C213.359%2034.138%20210.875%2037.27%20207.014%2037.27C204.989%2037.27%20203.261%2036.244%20202.235%2034.435V37H199.697V17.614H202.424V25.147C203.423%2023.392%20205.07%2022.42%20207.014%2022.42C210.848%2022.42%20213.359%2025.498%20213.359%2029.845ZM210.524%2029.845C210.524%2026.605%20208.823%2024.823%20206.474%2024.823C204.206%2024.823%20202.424%2026.578%20202.424%2029.791C202.424%2032.95%20204.152%2034.84%20206.474%2034.84C208.823%2034.84%20210.524%2033.031%20210.524%2029.845Z'%20fill='%230066FF'/%3e%3c/svg%3e" alt="" class="max-w-[215px]">
+            <p>
+              <span class="font-semibold mb-4">Corporate Head Office:</span>
+               3787 Jerry Dove Drive, Florence, South Carolina, 29501, United States.
+            </p>
+            <p>
+              <span class="font-semibold">Phone:</span> 843-496-7759
+            </p>
+            <p>
+              <span class="font-semibold">Fax:</span> 02-222264303
+            </p>
+            <p>
+              <span class="font-semibold">Email:</span> info@mastershub.com
+            </p>
+          </div>
+          <div class="js-reveal transition-all duration-500 flex flex-col items-start"
+          data-delay="0"
+          data-animation="fade-left">
+            <h2 class="font-semibold text-xl mb-6">Quick Links</h2>
+            <ul class="flex flex-col gap-y-3">
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Jobs
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Employeer
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Сareers
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="js-reveal transition-all duration-500 flex flex-col items-start"
+          data-delay="200"
+          data-animation="fade-left">
+            <h2 class="font-semibold text-xl mb-6">Others</h2>
+            <ul class="flex flex-col gap-y-3">
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  How it works
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Terms and condition
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  About Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="js-reveal transition-all duration-500 flex flex-col items-start"
+          data-delay="400"
+          data-animation="fade-left">
+            <h2 class="font-semibold text-xl mb-6">About us</h2>
+            <ul class="flex flex-col gap-y-3">
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Company milestone
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Web mail
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Board of Directors
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Senior Management
+                </a>
+              </li>
+            </ul>
+          </div>  
+        </div>
+
+        <div class="flex justify-between items-center">
+          <p>©2024 All rights reserved</p>
+          <ul class="flex gap-x-5">
+            <li>
+              <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJBSURBVHgB3VW9bhNBEP7Gx0mURkJQcumQHMmHhKDk3FEmTwB0KEFKKKlIunQgBBFl3oC8gZ3OEkhcJAjpsnRIUFwKJODkDLN7e3f+2bsLxlU+ae3xeHdm55ufBS4ayKkNN9tI04cidWUFstp2uaDMJ3MCogP4/j7il6rZ0fLahqi3wJWGm8G8haPd7XGVN+XkOZh2RLqM/wFRhKu3T/Hjw7BQFX+GjwOk3gkWh0RoXBIaE/2jVahTbwXzgngfP/0rEklvTJvn2eBSuZnuCbcNBmkge5SVQ5FDI7MUgTI3H6CzPn6iO+sIXJf8WAw/xafXgwntTaHb8/oibVgHN6ZuFuRSC82IhZZe4aSzFmL5SWTk47dK8nDL7nsha3PyaHn5MiI2/TKLkb9qaMmKRd8+MBR31pUcWpVkx+L4kej6jtPtc0YkOTm2zZc7KSEyvTPNraMliuss1TsiHJjvjKrAsUOi/JPpmQ8xt6MzGzqfJZV7qHWuCdIQEWfl+XlX06IcO1RRJERdzO0IiCQHgZFGo96UM2WKQUMXSt5TFRhv2MTZsGmqE96zE3nJ5EtTmUWZT/q+2zwpzEbEVXkIxdDHIjJNVe5EO9X/oaI1nBExvtbsk+pKT6R3BijpC5vokshPZx3pCQA8QD0i/Av0bLQoqfP9PejRvkiM5LW1KB++b8NfuHbnt0j3sQgwbePLK4cjje/vh7h+Vz+GEeYFGVae4ejNzqTahWz8r5g3Kh+MzIHbMGnDiX2nDmXS79m36YLjL2D+yfu545OOAAAAAElFTkSuQmCC" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH6SURBVHgB7ZRPTttAFMa/ie29OQFZIiWVzAnqniDpCUp2FUSqOQHpCZpKabdwA7hBwg2MIMDSN8AbNrHj4Ztx/thgh9jAjk+KM+/N+P3eezMe4FM1JfARcjwbs9kvCOHCsr7DH4Ym3ksqeBw7kPIEUeQSkvrn8y6fZ28HtfsupOggjg4gYb+YlzJQf/Vap7KPGBjo8Oeu/AIhYSFHzZVv+k8zqlWks5c/mL1qRz57Kf4iwQSGPCVsSZ4sR6+D1hvL1shmGjS3wufcMZ27rOg8NydxtRw2sCn71tGYLXpgoAGy7dDJ6hYdszX7QPKV47MXMQxWWFiRCp7wpYbwmL1dmoRgS2Kzh/thgPbhCds2KFyXJME6LyXnZxORcYrsxhYCWMVc9HA3utB26+gPn17J6pDV7iBXUdSwmaXNKsoharMfzQGCYZh+MzO16d0NWflZKwVN/yvnPvZYmWF0Ce0Q6i7WBLR7mI4m2kqP9piBHGySwGXeLJOCWqaD60WbNES3mJBnB6MQJL7hZpEcqnywVSBKlrWj7ril2cC2is2DrSGq3RlINRBgb71Syqvnru1B2e9KnUB1I5RJrK+e6iCB3QXkN25Hnr4RBMfFIL8+aA0ZrOwbjtXpUnuSlWn6qK09r1k+xxPZPjznTSHR6o/x4frS725M6FN19ATzz6ni6U9OOQAAAABJRU5ErkJggg==" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGMSURBVHgB7ZVPToNAFMa/gXbfI+DOpE3aI9ATaE/QujPWxN5AewJZaOPOehLqCcSkTbocb8BCNwKOb0ACI1AoZdlfMmQY3sw3fPPnAUdqwlCH7tWEuo6jEYSL9WJU1kVDHZhm0NMMi2AmBrNOWZd6QiodfPuzsqAmhKR9N2TnYFdIC81A1rE3dKdLMPaCVsuBY7npgGb+KGECIWz4WSubFiqk3LreNe0sIf3vh7asH1b/IjiCYAhdv6P6eH+hwaUBT38mETPV+kFllYndPnFI22SRm8IP3GpCkYhNNQP7slk4ec35Qp5+q4gw0AwZh/jhqElWKPyb0IYYB5/tIbjl4gCyu87TTOU9aI8OFckXiu6xGI6txdEAWSEh0rPvFFyY/aRKa1dLiDFHEfK8e+V7dzqmyZwnE8M7KpCfj3pTmwYwUy0c0fkxAKVdruFJFXvzryA/uPgbPMZAdCBNJU6wedU1LM6wp7TN9YJDK8+VwBybRwsVKU/lMm0z7QxhKpAC4hVf7WUTW/5IJX4B+it0lUSjbDsAAAAASUVORK5CYII=" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE3SURBVHgB7ZW9TsMwEMf/50TMmZjNxoDULOz0CeARGBFLsrK1b1CJD7EBb8DICCsTSFR0w6xMmdPE5kwY6naIXdVbf1I+Tr7onzv77oAtPZBj7ZcSSZ2BBF9aOmtGuDZptbTe2U2qMJsoV+DgvODXEQwybAbFimNMb+4J+ZnEPPlCDIiGgkMqEQuNE8GhDBANLVmAfPL+jL+8BkI0EDBGeji+oG2H/BwjEI7A8+TMbhU+rkYstMfWA/ywKQrECk2vT+0JgUfawgVcVJ9DilC6urnjvTvycU///0L2euZlhrou0JCtG9+Kr/wiMOYYzbzgvGfcTkJQgj9683DM1+tTVNlN/kYsDN6twCNiodNJgp9Xhd1DjoJyYEPtmlDx/QKfl0+rAydtZOe0xsAxukK7Uy0OnC29/AJwbGAFvzcDuQAAAABJRU5ErkJggg==" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/MastersHub/reveal-scroll.js"></script>
+    <script src="/MastersHub/preloader.js"></script>
+  </body>
+</html>
