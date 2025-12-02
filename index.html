@@ -7,7 +7,12 @@
     <title>Masters Hub</title>
   </head>
   <body>
-    <section class="bg-[url('images/bg-gradient.jpg')] w-full h-screen bg-no-repeat bg-cover bg-center">
+
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-500 opacity-100">
+      <div class="animate-spin rounded-full h-12 w-12 border-4 border-t-4 border-blue-500 border-t-transparent"></div>
+    </div>
+
+    <header class="bg-[url('images/bg-gradient.jpg')] w-full h-screen bg-no-repeat bg-cover bg-center">
       <nav class="flex items-center justify-between px-[102px] py-[25px] mb-[45px]">
         <a href="#">
           <img src="src/images/Logo.svg" alt="">
@@ -68,8 +73,6 @@
         </div>
       </div>
       <div class="flex justify-center items-center gap-6 overflow-x-auto w-full hide-scrollbar">
-        <img src="src/images/portrets/1.png" alt="">
-        <img src="src/images/portrets/2.png" alt="">
         <img src="src/images/portrets/3.png" alt="">
         <img src="src/images/portrets/4.png" alt="">
         <img src="src/images/portrets/1.png" alt="">
@@ -80,11 +83,13 @@
         <img src="src/images/portrets/2.png" alt="">
         <img src="src/images/portrets/3.png" alt="">
       </div>
-    </section>
+    </header>
 
     <section class="py-20 md:py-24">
     <div class="flex flex-col items-center justify-center px-4">
-      <div class="max-w-xl text-center mb-10">
+      <div class="js-reveal transition-all duration-500 max-w-xl text-center mb-10"
+      data-delay="0"
+      data-animation="fade-up">
         <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-neutral-900 leading-tight"> 
             Why Choose <br/>Masters in Me?
         </h1>
@@ -96,7 +101,9 @@
       <div class="relative w-full max-w-xl aspect-square mx-auto">
         
         <div class="absolute inset-0 bg-[url('images/choose-bg.png')] bg-no-repeat bg-cover bg-center rounded-full border-12px border-blue-50/50"></div>
-            <div class="absolute top-2/9 -left-60 z-20">
+            <div class="js-reveal transition-all duration-500 absolute top-2/9 -left-60 z-20"
+            data-delay="0"
+            data-animation="fade-down">
                 <div class="py-6 px-7 max-w-[260px] bg-white rounded-3xl shadow-2xl/15 flex flex-col items-center justify-center">
                   <img src="src/images/icons/computer.png" alt="" class="mb-4">
                   <h3 class="text-neutral-900 text-2xl font-semibold">Showcase Work</h3>
@@ -105,14 +112,18 @@
                 </div>
             </div>
 
-            <div class="absolute top-1/12 -right-60 z-20">
+            <div class="js-reveal transition-all duration-500 absolute top-1/12 -right-60 z-20"
+            data-delay="200"
+            data-animation="fade-up">
                 <div class="px-6 py-6 max-w-[260px] max-h-[92px] bg-white rounded-3xl shadow-2xl/15 flex items-center gap-3">
                   <img src="src/images/icons/message.png" alt="" class="w-auto h-auto ">
                   <h3 class="font-semibold text-xl">Networking Opportunities</h3>
                 </div>
             </div>
 
-            <div class="absolute bottom-1/8 -left-60 z-20">
+            <div class="js-reveal transition-all duration-500 absolute bottom-1/8 -left-60 z-20"
+            data-delay="0"
+            data-animation="fade-down">
                 <div class="px-6 py-7 max-w-[280px] bg-white rounded-3xl shadow-2xl/15 flex gap-3">
                   <img src="src/images/icons/globus.png" alt="">
                   <div>
@@ -122,7 +133,9 @@
                 </div>
             </div>
 
-            <div class="absolute bottom-2/8 -right-60 z-20">
+            <div class="js-reveal transition-all duration-500 absolute bottom-2/8 -right-60 z-20"
+            data-delay="200"
+            data-animation="fade-up">
                 <div class="py-6 px-7 max-w-[260px] bg-white rounded-3xl shadow-2xl/15 flex flex-col items-center justify-center">
                   <img src="src/images/icons/add-documents.png" alt="" class="mb-4">
                   <h3 class="text-neutral-900 text-2xl font-semibold">Resume Builder</h3>
@@ -147,6 +160,259 @@
         </div>
       </div>
     </div>
-</section>
+    </section>
+
+    <section class="bg-[#FAFAFA] pt-[88px] pb-6">
+      <div class="js-reveal transition-all duration-700 flex flex-col max-w-[830px] mx-auto text-center"
+      data-delay="0"
+      data-animation="fade-up">
+        <div class="max-w-[660px] mx-auto">
+          <h1 class="text-neutral-900 text-6xl mb-4">We are happy to work with incredible clients</h1>
+          <p class="text-neutral-600 font-light mb-10">Fortune 500 companies and renowned global brands place their trust in our products, solutions, and bespoke software development services.</p>
+        </div>
+        <img src="src/images/clients-bg.png" alt="">
+      </div>
+    </section>
+
+    <section class="mb-[88px]">
+      <div class="flex items-center justify-center gap-20 py-[88px]">
+        <div class="duration-700  flex flex-col w-[580px] items-start gap-y-8">
+          <h1 class="text-6xl mb-12 font-semibold">
+            How It Works
+          </h1>
+          <div class="js-reveal transition-all duration-700 flex justify-center items-center gap-6 max-h-[105px]"
+          data-animation="fade-right"
+          data-delay="0">
+            <span class="font-bold text-[108px] text-[#002B6B]/20">01</span>
+            <div class="flex bg-white p-6 shadow-2xl shadow-[#002B6B]/25 rounded-3xl items-center justify-center gap-4">
+              <img src="src/images/icons/exit.png" alt="" class="w-14 h-14">
+              <div class="flex flex-col">
+                <p class="text-neutral-900 text-xl">Sign Up and create Account</p>
+                <p class="text-neutral-600 font-light text-sm">Fill out your details and showcase your skills.</p>
+              </div>
+            </div>
+          </div>
+          <div class="js-reveal transition-all duration-700 flex flex-row-reverse justify-center items-center gap-6 max-h-[105px]"
+          data-animation="fade-left"
+          data-delay="200">
+            <span class="font-bold text-[108px] text-[#002B6B]/20">02</span>
+            <div class="flex bg-white p-6 shadow-2xl shadow-[#002B6B]/25 rounded-3xl items-center justify-center gap-4">
+              <img src="src/images/icons/upload.png" alt="" class="w-14 h-14">
+              <div class="flex flex-col">
+                <p class="text-neutral-900 text-xl">Upload Your Portfolio</p>
+                <p class="text-neutral-600 font-light text-sm">Add your resume, videos, and more.p>
+              </div>
+            </div>
+          </div>
+          <div class="js-reveal transition-all duration-700 flex justify-center items-center gap-6 max-h-[105px]"
+          data-animation="fade-left"
+          data-delay="400">
+            <span class="font-bold text-[108px] text-[#002B6B]/20">03</span>
+            <div class="flex bg-white p-6 shadow-2xl shadow-[#002B6B]/25 rounded-3xl items-center justify-center gap-4">
+              <img src="src/images/icons/ticket.png" alt="" class="w-14 h-14">
+              <div class="flex flex-col">
+                <p class="text-neutral-900 text-xl">Get Discovered</p>
+                <p class="text-neutral-600 font-light text-sm">Let employers find and contact you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="js-reveal transition-all duration-700 flex justify-center gap-6"
+        data-animation="fade-left" 
+        data-delay="0">
+          <div class="relative">
+            <img src="src/images/how-it-works-1.png" alt="" class="mb-6">
+            <div class="js-reveal transition-all duration-400 flex bg-white absolute bottom-1/12 shadow-2xl shadow-[#002B6B]/25 rounded-3xl p-4 w-[280px] items-center gap-4"
+            data-animation="fade-right"
+            data-delay="800">
+              <div class="flex">
+                <img src="src/images/portrets/avatar-1.png" alt="">
+                <img src="src/images/portrets/avatar-2.png" alt="" class="-ml-5">
+                <img src="src/images/portrets/avatar-3.png" alt="" class="-ml-5">
+              </div>
+              <div class="flex flex-col">
+                <p class="text-primary font-bold text-xl">
+                  10K +
+                </p>
+                <p class="text-sm text-neutral-600">
+                  Job Seekers
+                </p>
+              </div>
+            </div>
+          </div>
+          <img src="src/images/how-it-works-2.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="js-reveal transition-all duration-500 flex flex-col max-w-[1240px] max-h-[400px] bg-[url('images/bg-gradient.jpg')] mx-auto items-center text-center w-full bg-position-[0px]  bg-no-repeat rounded-3xl p-[88px] shadow-2xl shadow-[#3B1FE7]/15 mb-[120px]"
+      data-delay="0"
+      data-animation="fade-up">
+        <div class="max-w-[600px]">
+      <h2 class="text-neutral-900 text-[40px] mb-4">
+          Join ambitious professionals and unlock your dream career today
+        </h2>
+        <p class="font-light text-neutral-600 mb-8">
+          Unlock your true potential and discover a world of opportunities that align with your skills, interests, and aspirations
+        </p>
+        </div>
+        
+
+        <form action="#" class="mb-14">
+              <div class="flex">
+                <div class="flex">
+                  <div  class="bg-white border-[#EDEDED] border rounded-3xl flex items-center justify-center px-6 shadow-lg">
+                    <img src="src/images/icons/mail.png" alt="">
+                    <input type="text" placeholder="Your mail address" class="outline-0 text-center"/>
+                  </div>
+                </div>
+                <button type="submit" class="bg-[#0066FF] cursor-pointer text-white rounded-full py-4 px-12 ml-2">Join Us</button>
+              </div>
+            </form>
+      </div>    
+    </section>
+
+    <footer>
+      <div class="js-reveal transition-all duration-700 bg-[url('images/bg-gradient-reverse.jpg')] w-full bg-center bg-cover bg-no-repeat px-[100px] py-12 mx-auto flex flex-col justify-between"
+      data-delay="0"
+      data-animation="fade-up">
+        <div class="flex items-start justify-between mb-24">
+          <div class="flex flex-col max-w-[415px]">
+            <img src="src/images/logo-blue.svg" alt="" class="max-w-[215px]">
+            <p>
+              <span class="font-semibold mb-4">Corporate Head Office:</span>
+               3787 Jerry Dove Drive, Florence, South Carolina, 29501, United States.
+            </p>
+            <p>
+              <span class="font-semibold">Phone:</span> 843-496-7759
+            </p>
+            <p>
+              <span class="font-semibold">Fax:</span> 02-222264303
+            </p>
+            <p>
+              <span class="font-semibold">Email:</span> info@mastershub.com
+            </p>
+          </div>
+          <div class="js-reveal transition-all duration-500 flex flex-col items-start"
+          data-delay="0"
+          data-animation="fade-left">
+            <h2 class="font-semibold text-xl mb-6">Quick Links</h2>
+            <ul class="flex flex-col gap-y-3">
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Jobs
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Employeer
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Сareers
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="js-reveal transition-all duration-500 flex flex-col items-start"
+          data-delay="200"
+          data-animation="fade-left">
+            <h2 class="font-semibold text-xl mb-6">Others</h2>
+            <ul class="flex flex-col gap-y-3">
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  How it works
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Terms and condition
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  About Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="js-reveal transition-all duration-500 flex flex-col items-start"
+          data-delay="400"
+          data-animation="fade-left">
+            <h2 class="font-semibold text-xl mb-6">About us</h2>
+            <ul class="flex flex-col gap-y-3">
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Company milestone
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Web mail
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Board of Directors
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-light text-neutral-600 hover:text-blue-600">
+                  Senior Management
+                </a>
+              </li>
+            </ul>
+          </div>  
+        </div>
+
+        <div class="flex justify-between items-center">
+          <p>©2024 All rights reserved</p>
+          <ul class="flex gap-x-5">
+            <li>
+              <a href="#">
+                <img src="src/images/icons/instagram.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="src/images/icons/telegram.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="src/images/icons/tiktok.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="src/images/icons/youtube.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/reveal-scroll.js"></script>
+    <script src="src/js/preloader.js"></script>
   </body>
 </html>

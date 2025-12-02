@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal on Scroll с Tailwind и Intersection Observer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Опциональный CSS для базового скролла */
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <section class="min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white">
+        <h1 class="text-5xl font-extrabold tracking-tight">
+            Прокрутите вниз, чтобы увидеть эффект!
+        </h1>
+    </section>
+
+    <div class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">Элементы с эффектом "Reveal"</h2>
+            
+            <div class="reveal-item opacity-0 transform translate-y-20 transition-all duration-700 p-8 mb-12 bg-gray-100 shadow-xl rounded-xl max-w-2xl mx-auto">
+                <h3 class="text-2xl font-semibold text-indigo-600 mb-3">Карточка с подъемом</h3>
+                <p class="text-gray-700">
+                    Начальное состояние: opacity-0 и translate-y-20. При появлении в viewport, JavaScript удаляет эти классы, и переход срабатывает.
+                </p>
+            </div>
+
+            <div class="reveal-item opacity-0 transform translate-y-20 transition-all duration-700 p-8 mb-12 bg-gray-100 shadow-xl rounded-xl max-w-2xl mx-auto" style="transition-delay: 200ms;">
+                <h3 class="text-2xl font-semibold text-green-600 mb-3">Карточка с задержкой</h3>
+                <p class="text-gray-700">
+                    Использование `style="transition-delay: 200ms;"` создает красивый каскадный эффект при прокрутке.
+                </p>
+            </div>
+            
+            <div class="reveal-item opacity-0 transform -translate-x-20 transition-all duration-1000 p-8 mb-12 bg-gray-100 shadow-xl rounded-xl max-w-2xl mx-auto" style="transition-delay: 400ms;">
+                <h3 class="text-2xl font-semibold text-red-600 mb-3">Сдвиг по горизонтали</h3>
+                <p class="text-gray-700">
+                    Этот элемент смещен влево (`-translate-x-20`) и появляется медленнее (`duration-1000`).
+                </p>
+            </div>
+
+            <div class="h-96 flex items-center justify-center text-gray-500">
+                <p>Ещё немного контента...</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealElements = document.querySelectorAll('.reveal-item');
+
+            const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+        const target = entry.target;
+
+        if (entry.isIntersecting) {
+            // Если элемент ВОШЕЛ в видимую область (Появление)
+            target.classList.add('opacity-100');
+            target.classList.remove('opacity-0', 'translate-y-20', '-translate-x-20');
+            
+            // Здесь мы НЕ используем observer.unobserve(target);
+            
+        } else {
+            // Если элемент ВЫШЕЛ из видимой области (Скрытие)
+            // Возвращаем классы скрытия и смещения
+            
+            // Обратите внимание: нужно знать, какой начальный класс смещения был у элемента!
+            // Для примера используем translate-y-20
+            target.classList.remove('opacity-100');
+            target.classList.add('opacity-0', 'translate-y-20'); 
+            
+            // Если элемент был сдвинут влево, используйте соответствующий класс:
+            // if (target.classList.contains('-translate-x-20')) {
+            //     target.classList.add('-translate-x-20');
+            // } else {
+            //     target.classList.add('translate-y-20');
+            // }
+
+        }
+    });
+};
+
+            const observerOptions = {
+                // Срабатывает, когда 10% элемента видно
+                threshold: 0, 
+                // Небольшой отступ, чтобы анимация срабатывала чуть раньше
+                rootMargin: '0px 0px -50px 0px' 
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            revealElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+</body>
+</html>

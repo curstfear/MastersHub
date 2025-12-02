@@ -10,10 +10,15 @@
     /* Центрирование и анимация */
     @apply after:left-1/2 after:w-0 after:-translate-x-1/2 after:transition-all after:duration-300;
   }
+  
 
   .nav-link:hover {
     /* Состояние при наведении */
     @apply after:w-full;
+  }
+  
+  .text-primary {
+    color: #0066FF;
   }
 
   .hide-scrollbar {
@@ -21,4 +26,5 @@
     -ms-overflow-style: none; /* IE и Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
 }
